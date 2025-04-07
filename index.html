@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Local Store</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Start Page -->
+  <div class="landing">
+    <h1>Welcome to Local Store 🛍️</h1>
+    <p>Find amazing products near you</p>
+    <button id="startBtn">Start Shopping</button>
+  </div>
+
+  <!-- Main Store Page -->
+  <div class="main-content hidden">
+    <h2>Our Products</h2>
+    <div class="filters">
+      <input type="text" id="searchBox" placeholder="Search products...">
+      <select id="sortSelect">
+        <option value="">Sort by</option>
+        <option value="low-high">Price: Low to High</option>
+        <option value="high-low">Price: High to Low</option>
+      </select>
+    </div>
+    <div id="productList" class="products"></div>
+
+    <h3>Your Cart 🛒</h3>
+    <div id="cartList" class="cart"></div>
+    <div id="total"></div>
+    <button id="purchaseBtn" class="purchase">Purchase</button>
+  </div>
+
+  <!-- Order Confirmation Page -->
+  <div class="confirmation hidden">
+    <h2>🎉 Order Successful!</h2>
+    <p>Thank you for shopping with us.</p>
+    <button onclick="goHome()">Back to Home</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
